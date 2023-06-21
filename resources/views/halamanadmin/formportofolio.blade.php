@@ -43,7 +43,7 @@
                 @if (file_exists("storage/".$portofolio->foto))
                     <img src="/storage/{{ $portofolio->foto }}" alt="" width="100" height="100">
                 @endif
-                <input class="form-control mt-3" name="foto" id="foto" type="file" required>
+                <input class="form-control mt-3" name="foto" id="foto" type="file"  value="{{ $portofolio->foto }}">
             </div>
             <div class="mb-3">
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">

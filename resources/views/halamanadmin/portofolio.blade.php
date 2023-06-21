@@ -77,8 +77,10 @@
                                 <td><img src="/storage/{{ $item->foto }}" alt="" width="100" height="100"></td>
                                 <td>{{ $item->description }}</td>
                                 <td class="col-4 text-center">
-                                    <a href="portofolio/edit/{{ $item->id }}" class="btn btn-success btn-sm mt-3">Ubah</a><br>
-                                    <a href="portofolio/delete/{{ $item->id }}" class="btn btn-danger btn-sm mt-2">Hapus</a>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <a href="portofolio/edit/{{ $item->id }}" class="btn btn-success btn-sm me-2">Ubah</a><br>
+                                        <a href="portofolio/delete/{{ $item->id }}" class="btn btn-danger btn-sm">Hapus</a>
+                                    </div>
                                 </td>
                             </tr>
                             @endforeach

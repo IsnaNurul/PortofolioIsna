@@ -24,7 +24,7 @@
   </head>
   <body>
     <header class="navbar navbar-dark sticky-top p-0 shadow" id="navbar">
-      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Halaman Admin</a>
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">My Portofolio</a>
       <div class="navbar-nav">
         <div class="nav-item text-nowrap">
           <form action="/logout" method="post">

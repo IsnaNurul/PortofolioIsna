@@ -11,42 +11,42 @@
     <link href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
     <script src="js1/bootstrap.bundle.js"></script>
     <style>
-    #mainNav {
-    background-color: #6096B4;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    font-family: sans-serif;
-    font-weight: 750;
-    }
-    #mainNav .navbar-brand {
-    color: #fff;
-    }
-    #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff;
-    }
-    #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #93BFCF;
-    }
+        #mainNav {
+        background-color: #6096B4;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+        font-family: sans-serif;
+        font-weight: 750;
+        }
+        #mainNav .navbar-brand {
+        color: #fff;
+        }
+        #mainNav .navbar-nav li.nav-item a.nav-link {
+        color: #fff;
+        }
+        #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+        color: #93BFCF;
+        }
 
-    #home{
-        background-color: #93BFCF;
-    }
+        #home{
+            background-color: #93BFCF;
+        }
 
-    #portofolio{
-        background-color: #93BFCF;
-    }
+        #portofolio{
+            background-color: #93BFCF;
+        }
 
-    .footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: #6096B4;
-    color: #fff;
-    }
+        .footer {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: #6096B4;
+        color: #fff;
+        }
 
-    .copyright {
-    background-color: #5688a2;
-    }
+        .copyright {
+        background-color: #5688a2;
+        }
     </style>
 </head>
 <body id="page-top">
@@ -71,7 +71,7 @@
         <div class="container-fluid p-0 text-white">
             <div class="p-5 text-center">
                 @if (file_exists("storage/".$profil->foto_profil))
-                    <img src="/storage/{{ $profil->foto_profil }}" alt="" width="200" height="200" class="rounded-circle img-thumbnail">
+                    <img src="/storage/{{ $profil->foto_profil }}" alt="" width="20%" height="20%" class="rounded-circle img-thumbnail">
                 @endif
                 <h1 class="display-4 pt-2">{{ $profil->nama_lengkap }}</h1>
                 <p class="lead">{{ $profil->status }}</p>
